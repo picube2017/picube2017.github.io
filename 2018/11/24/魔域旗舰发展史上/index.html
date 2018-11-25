@@ -367,7 +367,7 @@
       notify: notify,
       verify: verify,
       avatar:'mm', 
-      placeholder: '辣真滴牛批' // [v1.0.7 new]留言框占位提示文字
+      placeholder: 'just go go' // [v1.0.7 new]留言框占位提示文字
    });
 </script>
   </section>
@@ -437,19 +437,21 @@
 
   </div>
   </section>
+  <div class="comment"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   <script>
-    new Valine({
-        // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
-        av: AV, 
-        el: '.comment',
-        emoticon_url: 'https://cloud.panjunwen.com/alu',
-        emoticon_list: ["吐.png","期待.png","高兴.png","吐血倒地.png","哭泣.png","欢呼.png"],
-        app_id: 'Q7vlAWHI530SuUWw2YDoJcKM-gzGzoHsz', // 这里填写上面得到的APP ID
-        app_key: '3maQxqv3xOggT363W7r8sBG7', // 这里填写上面得到的APP KEY
-        placeholder: '辣真的牛批', // 留言框占位提示文字
-    });
-</script>
+      new Valine({
+          // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+          av: AV, 
+          el: '.comment', // 
+          app_id: 'Q7vlAWHI530SuUWw2YDoJcKM-gzGzoHsz', // 这里填写上面得到的APP ID
+          app_key: '3maQxqv3xOggT363W7r8sBG7', // 这里填写上面得到的APP KEY
+          placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!' // [v1.0.7 new]留言框占位提示文字
+      });
+  </script>
 </div>
+
     <!-- BEGIN PRE-FOOTER -->
    
           <!-- END BOTTOM CONTACTS -->
@@ -526,11 +528,11 @@
 <!-- END PAGE-SPECIFIC PLUGINS --> 
 
 <!-- BEGIN INTEGRATIONS -->
+<!-- 
 
 
 
-
-
+ -->
 <!-- END INTEGRATIONS -->
 
 
