@@ -134,10 +134,10 @@
 					</ul>
 			 </li>
 			 <li class="nav-item dropdown">
-				  <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#"> 高阶 <i class="fa fa-angle-down"></i></a>
+				  <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-submenu="" data-delay="0" data-close-others="false" href="#"> 高阶 <i class="fa fa-angle-down"></i></a>
 					<ul class="dropdown-menu" style="min-width:106.75px;">
-							<li class="nav-item dropdown1">
-							<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#"> 高阶 </a>
+							<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">高阶</a>
 						<ul class="dropdown-menu">
 								<li><a href="/bigcube/yau"> YAU复原法</a></li>
 								<li><a href="/bigcube/84method"> 84复原法</a></li>
@@ -187,6 +187,9 @@
 		 window.location = link;  
 	});
 });  
+$(function () {
+   $('[data-submenu]').submenupicker();
+});
 </script>
 
   <div class="container">
@@ -529,6 +532,7 @@
 <script src="/metronic/assets/plugins/jquery-migrate.min.js"></script>
 <script src="/metronic/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="/metronic/assets/plugins/bootstrap/js/bootstrap-hover-dropdown.min.js"></script>
+<script src="/metronic/assets/plugins/bootstrap/js/bootstrap-submenu.js"></script>
 <script src="/metronic/assets/corporate/scripts/back-to-top.js"></script>
 <script src="/metronic/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
 <script src="/metronic/assets/corporate/scripts/layout.js"></script>
