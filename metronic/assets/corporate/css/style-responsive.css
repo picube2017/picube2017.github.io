@@ -90,7 +90,7 @@
 	}
 
 	.header-navigation .dropdown-menu .dropdown-menu {
-		display: none;
+		display: block;
 	}
 	.header-navigation .header-navigation-content {
 		border: none;

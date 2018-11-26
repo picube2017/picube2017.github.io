@@ -25,9 +25,9 @@
 
       const dropdownItemNodeList = this.menuElement.querySelectorAll('.dropdown-item');
 
-      Array.from(dropdownItemNodeList).forEach((element) => {
+      for (const element of dropdownItemNodeList) {
         element.addEventListener('keydown', this.handleKeydownDropdownItem.bind(this));
-      });
+      }
 
       $(this.menuElement).on('keydown', '.dropdown-submenu > .dropdown-item', this.handleKeydownSubmenuDropdownItem.bind(this));
       $(this.menuElement).on('click', '.dropdown-submenu > .dropdown-item', this.handleClickSubmenuDropdownItem.bind(this));
@@ -77,7 +77,9 @@
 
       const itemNodeList = this.element.querySelectorAll('.show > .dropdown-item:not(:disabled):not(.disabled), .show > .dropdown > .dropdown-item');
 
-      let index = Array.from(itemNodeList).indexOf(event.target);
+      let index = Array.from(itemNodeList).findIndex((element) => {
+        return element === event.target;
+      });
 
       if (event.keyCode === 38 && index !== 0) {
         index--;
@@ -104,9 +106,9 @@
     close(menuElement) {
       const menuNodeList = menuElement.querySelectorAll('.dropdown-menu.show');
 
-      Array.from(menuNodeList).forEach((element) => {
+      for (const element of menuNodeList) {
         element.classList.remove('show');
-      });
+      }
     }
   }
 
