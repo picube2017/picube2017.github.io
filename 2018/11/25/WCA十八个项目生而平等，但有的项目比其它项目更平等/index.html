@@ -174,7 +174,10 @@ $(function () {
 });
 </script>
 
-  <div class="container">
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<div class="container">
   <ul class="breadcrumb">
     <li><a href="/">首页</a></li>
     <li><a href="/archives">资讯</a></li>
@@ -329,20 +332,20 @@ $(function () {
 
   </div>
   </section>
-  <div class="comment"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  <script>
-      new Valine({
-          // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
-          av: AV, 
-          el: '.comment', // 
-          app_id: 'Q7vlAWHI530SuUWw2YDoJcKM-gzGzoHsz', // 这里填写上面得到的APP ID
-          app_key: '3maQxqv3xOggT363W7r8sBG7', // 这里填写上面得到的APP KEY
-          placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!' // [v1.0.7 new]留言框占位提示文字
-      });
-  </script>
-</div>
+ <div id="vcomment"></div>
+ <script type="text/javascript">
+  window.valine = new Valine({
+      el: '#vcomment' ,
+      verify: true,
+      notify: true,
+      appId: 'R9cQjqaD9AXPKY7AQiU6U6yl',
+      appKey: 'YHUU5n9sbvpRQCdiIU8aRsmH',
+      placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+      visitor: true
+  });
+</script>
+  </div>
+
 
     <!-- BEGIN FOOTER -->
   <div class="footer">
