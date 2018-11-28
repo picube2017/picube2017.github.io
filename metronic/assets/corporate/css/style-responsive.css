@@ -24,6 +24,29 @@
 		margin: 0 -20px 25px;
 		font-size: 16px;
 	}
+
+
+
+	.header-navigation > ul > li:hover > .dropdown-menu {
+		display: block;
+	  }
+	  .header-navigation > ul > li.dropdown:hover > a:after { 
+		bottom: 0;
+		width: 0; 
+		height: 0;
+		z-index: 1002; 
+		content: " "; 
+		display: block !important; 
+		position: absolute;
+		border-bottom: 8px solid #e6400c;
+		border-right: 8px solid transparent;
+		border-left: 8px solid transparent;
+	  }
+	  .header-navigation li.dropdown100 > .dropdown-menu:after {
+		display: none !important;
+	}
+
+
 	.header .header-navigation li {
 		float: none;
 		padding: 0;
