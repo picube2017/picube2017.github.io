@@ -12,7 +12,7 @@
   border-radius: 0 6px 6px 6px;  
 }  
 
-.dropdown-submenu:click>.dropdown-menu {  
+.dropdown-submenu:hover>.dropdown-menu {  
   display: block;  
 }  
 
@@ -30,7 +30,7 @@
   margin-right: -10px;  
 }  
 
-.dropdown-submenu:click>a:after {  
+.dropdown-submenu:hover>a:after {  
   border-left-color: #fff;  
 }  
 
