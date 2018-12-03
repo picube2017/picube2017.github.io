@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://picube.cc/clock/index.html</loc>
+    
+    <lastmod>2018-12-03T10:47:24.797Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://picube.cc/others/lichenwei/index.html</loc>
     
     <lastmod>2018-12-03T10:46:10.723Z</lastmod>
@@ -110,13 +117,6 @@
     <loc>http://picube.cc/2018/11/23/%E5%A4%A7%E9%9B%81%E6%97%97%E8%88%B0%E5%8F%91%E5%B1%95%E5%8F%B2/</loc>
     
     <lastmod>2018-11-27T16:47:44.402Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://picube.cc/clock/index.html</loc>
-    
-    <lastmod>2018-11-27T16:41:01.455Z</lastmod>
     
   </url>
   
