@@ -13,17 +13,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="lV6lEZXPs7B4HV8QGBmmnkXF87ho0RwEiPbKwYUjciI">
 
-  <!-- <meta name="description" content="建设中">
+  <!-- <meta name="description" content="CSP介绍 发展过程 CSP是一个非常年轻的技术，2016年由英国魔友Matthew Sheerin提出，当时覆盖的形并不多。随后由美国魔友Tommy Szeliga和Rowe Hessler 整理出了全套公式，第一个在比赛中使用CSP的魔友是印度的Lakshay Modi。最著名的CSP使用者当属Brandon Lin，他学会CSP后将WR平均从9.33一路带到8.45，可见CSP的威力。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="派魔方">
-<meta property="og:url" content="http://picube.cc/555/beginner/index.html">
+<meta property="og:url" content="http://picube.cc/sq1/csp/index.html">
 <meta property="og:site_name" content="派魔方">
-<meta property="og:description" content="建设中">
+<meta property="og:description" content="CSP介绍 发展过程 CSP是一个非常年轻的技术，2016年由英国魔友Matthew Sheerin提出，当时覆盖的形并不多。随后由美国魔友Tommy Szeliga和Rowe Hessler 整理出了全套公式，第一个在比赛中使用CSP的魔友是印度的Lakshay Modi。最著名的CSP使用者当属Brandon Lin，他学会CSP后将WR平均从9.33一路带到8.45，可见CSP的威力。">
 <meta property="og:locale" content="zn">
-<meta property="og:updated_time" content="2018-11-21T07:25:07.824Z">
+<meta property="og:image" content="http://picube.cc/img/CSP/csp1.png">
+<meta property="og:image" content="http://picube.cc/img/CSP/csp2.png">
+<meta property="og:updated_time" content="2018-12-11T11:59:32.854Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="派魔方">
-<meta name="twitter:description" content="建设中"> -->
+<meta name="twitter:description" content="CSP介绍 发展过程 CSP是一个非常年轻的技术，2016年由英国魔友Matthew Sheerin提出，当时覆盖的形并不多。随后由美国魔友Tommy Szeliga和Rowe Hessler 整理出了全套公式，第一个在比赛中使用CSP的魔友是印度的Lakshay Modi。最著名的CSP使用者当属Brandon Lin，他学会CSP后将WR平均从9.33一路带到8.45，可见CSP的威力。">
+<meta name="twitter:image" content="http://picube.cc/img/CSP/csp1.png"> -->
   <!--  -->
   
     <link rel="icon" href="/favicon.ico">
@@ -196,7 +199,76 @@ $(function () {
 
   <div class="container">
   <div class="main">
-    <h1>建设中</h1>
+    <h1 align="center">CSP介绍</h1>
+<h3 align="center">发展过程</h3>
+<h4 align="center">CSP是一个非常年轻的技术，2016年由英国魔友Matthew Sheerin提出，当时覆盖的形并不多。随后由美国魔友Tommy Szeliga和Rowe Hessler 整理出了全套公式，第一个在比赛中使用CSP的魔友是印度的Lakshay Modi。最著名的CSP使用者当属Brandon Lin，他学会CSP后将WR平均从9.33一路带到8.45，可见CSP的威力。
+        目前，世界前十几乎全部是CSP的使用者。按照比赛表现看，CSP使用者发挥相对稳定，2017年世锦赛Jayden McNeil就是以五次CSP拿下的世界冠军，而前两轮第一的Charlie Stark却与领奖台失之交臂。
+</h4>
+<h3 align="center">原理介绍</h3>
+<h4><font color="red"><strong>定义parity：</strong></font>任何魔方都可以使用多次两两交换还原，如果一个魔方需要奇数次两两交换才可以还原，那么它就是有parity 的。按照这个定义，四阶和square-1可能出现parity，而三阶、金字塔和斜转等魔方是不可能出现parity 的，如果出现了那就是装错了。
+    而所有的高阶事实上都会出现parity，即为一组翼棱对换，只是在偶数阶上表现为不可能出现的三阶情况而已。为了避免混淆奇偶和parity，以下内容，parity都指最后会出现一组两两对换的情况。以没有parity 的三阶举例，如果棱用奇数次对换可以解决，那么角也必定是奇数次对换，如果棱可以用偶数次对换解决，那么角也必定是偶数次。这一点会三盲的都能理解。那么三阶的总循环数一定是偶数个，因此三阶不可能出现parity。
+    而square-1就不同，2.0这条公式让很多新手头疼了好久。然而，打乱的square-1是无法定义有无parity 的。之前也说到parity是两两对换的次数，打乱状态的square-1可能会出现两个棱和一个角对换，这样并不属于循环的范畴。
+    只有复形了才能确定parity 的有无，可见parity是出现在复形里的。在操作层面已经很容易理解，想要不出现parity，只需要准备两套公式，会出现parity和不会出现parity的情况分别做对应的公式。
+</h4>
+<h4><font color="red"><strong>判断parity：</strong></font>只需要知道怎么判断打乱有没有parity了。有人会想到去追踪复形后的状态，方形的状态是可以定义parity。这非常困难，当我想尝试这个方法时，sq盲拧大神二锅建议我放弃。他说15秒不可能看出来的。
+    既然打乱状态的parity不能直接定义，于是就出现了另外一个定义parity 的方法，找一个形状和这个打乱一样的状态，称之为标准形。然后判断当前打乱和标准形的parity 是否相同。
+    标准形可以自己造，也可以学别人现成的。举一个例子，Tommy Szeliga和Rowe Hessler 扇贝扇贝标准形是这样的，非常有规律，便于记忆。
+</h4>
+<div align="center">
+    <h4 align="center"><strong>标准形例子</strong></h4>
+    <img src="/img/CSP/csp1.png" class="img-responsive" alt="害没图片" width="300">
+    <h4 align="center">角块：顶层：橙绿-绿红-红蓝-蓝橙 底层同上，仰视视角</h4>
+    <h4 align="center">棱块：顶层：橙绿红蓝 底层同上，仰视视角</h4>
+</div>
+<h4>而判断打乱和标准形parity是否相同就需要三盲基础了，限于篇幅不介绍三盲的读码方法。不需要像三盲一样把编码读出来，直接数码的数量就行，甚至可以数101010...因为循环数量究竟是多少没有意义，因为只需要知道循环数是奇数还是偶数。
+    为了提高数的速度，循环数有两种定义方法。一种是直接数两两交换的数量并跳过已经归位的块，另一种是数小循环的数量和已经归位的块的数量，这两种方法的数出来的结果是一样的，建议采用第一种，更容易上手。实例见文末。
+    另外，每一个形都需要记住一个棱块和角块的起始位置，每次遇到相同的形都是从相同的位置开始数。比如扇贝扇贝，个人的棱块起始位置是标准形中的黄橙，角块起始位置是标准形中的黄橙绿。
+</h4>
+<h4><font color="red"><strong>解决parity：</strong></font>结合之前说的操作方法，判断标准形做哪条公式哪条公式无特非常简单，做一遍就知道了。记住这个之后，每次拿到一个打乱都判断它和标准形parity 是否相同，然后就可以做对应的公式了。相同做无特公式，相反做有特公式。
+    整理标准形时需要考虑便于记忆，因此不一定所有的标准形做自己的复形公式都是无特的。Tommy Szeliga和Rowe Hessler的文档已经将大部分都整理为无特不需要增加步数的标准形，然而还是有例外，学习CSP也是一个学习例外的过程。
+    总结第二套复形公式的技巧也很多。以刚才的扇贝扇贝举例子，如果数出来是奇数，只需将上下层三角角块放在同侧，做一个/就完成了奇偶转化，这个/相当于三组角两两对换，就是一次奇数置换，当然也可以直接背现成的公式。
+</h4>
+<h3 align="center">学习建议</h3>
+<h4><font color="red"><strong>命名：</strong></font>单层4个角块4个棱块的情况有10种，以形状命名：方 筝 桶 菇 贝 盾 拳（以及对称形） 爪（以及对称形）<br>
+    筝是风筝简称，菇是蘑菇简称，贝是扇贝简称。<br>
+    以下所有教程若无特别说明，拳和爪都是泛指两种情况。<br>
+    单层3个角块6个棱块的情况有10种，以棱块的排列方式命名：33，222，6，411，15（以及对称形），24（以及对称形） ，123（以及对称形）。<br>
+    以下所有教程若无特别说明，15、24、123都是泛指两种情况。<br>
+    单层5个角块2个棱块的情况有3种，以两个棱块的关系命名：五星，垂直棱，平行棱<br>
+</h4>
+<h4><font color="red"><strong>学习门槛：</strong></font>学习CSP的门槛是熟练90%以上的快速复形，否则难度太大。
+</h4>
+<h4><font color="red"><strong>学习顺序：</strong></font>首先学习上下层是完全一致、互相投影的形，分别有这些：方方、贝贝、爪爪、盾盾、桶桶、拳拳、菇菇。<br>
+    学习上下一致的形后，所有的上下层均为四棱四角的情况无非是这些的单层组合，更方便学习记忆。4-4情况占了所有情况的65%。<br>
+    然后建议学习3-5的形，即上层三个角下层五个角。单层三个角共有10种情况，下层五个角共三种（五星、垂直棱、平行棱），按照括号内顺序学习。<br>
+    六星完全可以放到最后学，它们和其他形的状态没有关系。<br>
+    建议先学的是上层下层都是4-4（四棱四角）的状态，学习上下层投影的几个形（扇贝扇贝，风筝风筝，盾牌盾牌，拳拳，爪爪和方形）会有很大帮助，熟练之后所有的4-4形只是他们的组合。<br>
+</h4>
+<h4><font color="red"><strong>拳爪处理：</strong></font>拳爪组合是sq所有形状中最特殊的一种，因为只有在这两个形组合在一起时，两层既没有中心对称的形，也没有轴对称的形，所以这样的组合一共有四种，算上倒置有8种情况需要记忆。<br>
+    有四种最短复形步骤五个/，四种最短复形步骤4个/。它们之间很难区分，只能靠大量的squanmate（见文末）专门练习才能熟练。
+</h4>
+<h4><font color="red"><strong>处理倒置：</strong></font>无论是否对称，只要遇到的打乱和记忆的标准形是上下倒置的，都要用左手捏着大边，把顶层作为底层，底层作为顶层来数。因为有一部分情况倒置后强行数的奇偶是反的，按照正常的方法数只会做出特来。
+</h4>
+<h4><font color="red"><strong>提升数的速度：</strong></font>学习初期很难在15s内观察完，这是很正常的。学的形越来越多，读码速度也会提升，一般学会一半以上的形就可以在比赛中数了。<br>
+    如果有特定的形经常超时或容易数错，可以使用squanmate（见文末）进行特定形状的练习，有奇效。
+</h4>
+<br>
+<h3 align="center">实例</h3>
+<h4 align="center">接下来以扇贝扇贝的形举一个例子。<br>
+    打乱(6,5)/ (3,0)/ (6,-3)/ (-5,-2)/ (-3,0)/ (3,0)/ (5,-4)/ (3,0)/ (0,-2)/ (-3,-3)/ (-2,-1)/(6,6)
+</h4>
+<div align="center">
+    <h4 align="center"><strong>打乱实例</strong></h4>
+    <img src="/img/CSP/csp2.png" class="img-responsive" alt="害没图片" width="300">
+    <h4 align="center">棱块：黄橙归位，白蓝-白绿-黄蓝-黄绿-归位，余下棱块全部归位，按照我的数法结果为5，所有经过的棱都+1，归位也需要+1。</h4>
+    <h4 align="center">角块：黄橙绿归位，白橙蓝-黄红蓝-白橙绿-黄红绿-归位，余下角块全部归位，结果为5。</h4>
+    <h4 align="center">总数为10，偶数。</h4>
+    <h4 align="center">偶数公式：/-2,-1/3,3/</h4>
+</div>
+<br>
+<h3 align="center">实用的练习工具</h3>
+<h4 align="center">squanmate：<a a="" href="https://squanmate.cuber.pro/" target="blank">https://squanmate.cuber.pro/</a></h4>
+
   </div>
 </div>
     <!-- BEGIN FOOTER -->
