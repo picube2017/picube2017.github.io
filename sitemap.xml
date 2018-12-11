@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://picube.cc/bigcube/lasttwocenters/index.html</loc>
+    
+    <lastmod>2018-12-11T12:14:41.244Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://picube.cc/sq1/csp/index.html</loc>
     
     <lastmod>2018-12-11T11:59:32.854Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://picube.cc/clock/index.html</loc>
     
     <lastmod>2018-12-11T11:58:26.704Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://picube.cc/bigcube/lasttwocenters/index.html</loc>
-    
-    <lastmod>2018-12-11T03:19:44.361Z</lastmod>
     
   </url>
   
