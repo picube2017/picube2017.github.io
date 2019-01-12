@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/333/cfop/oll/index.html</loc>
+    <loc>/about/index.html</loc>
     
-    <lastmod>2019-01-12T07:20:15.562Z</lastmod>
+    <lastmod>2019-01-12T07:21:33.045Z</lastmod>
     
   </url>
   
   <url>
-    <loc>/333/zbll/pi/index.html</loc>
+    <loc>/333/cfop/oll/index.html</loc>
     
-    <lastmod>2019-01-12T07:20:12.868Z</lastmod>
+    <lastmod>2019-01-12T07:20:15.562Z</lastmod>
     
   </url>
   
@@ -24,6 +24,13 @@
   
   <url>
     <loc>/333/cfop/pll/index.html</loc>
+    
+    <lastmod>2019-01-12T07:20:12.868Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/333/zbll/pi/index.html</loc>
     
     <lastmod>2019-01-12T07:20:12.868Z</lastmod>
     
@@ -44,13 +51,6 @@
   </url>
   
   <url>
-    <loc>/333/zbll/u/index.html</loc>
-    
-    <lastmod>2019-01-12T07:20:12.786Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>/333/zbll/t/index.html</loc>
     
     <lastmod>2019-01-12T07:20:12.786Z</lastmod>
@@ -59,6 +59,13 @@
   
   <url>
     <loc>/333/zbll/l/index.html</loc>
+    
+    <lastmod>2019-01-12T07:20:12.786Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/333/zbll/u/index.html</loc>
     
     <lastmod>2019-01-12T07:20:12.786Z</lastmod>
     
@@ -128,13 +135,6 @@
   </url>
   
   <url>
-    <loc>/about/index.html</loc>
-    
-    <lastmod>2018-12-30T15:21:12.427Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>/bigcube/444edges/index.html</loc>
     
     <lastmod>2018-12-27T04:29:29.448Z</lastmod>
@@ -156,7 +156,7 @@
   </url>
   
   <url>
-    <loc>/333/ohcoll/index.html</loc>
+    <loc>/sq1/csp/index.html</loc>
     
     <lastmod>2018-12-27T04:29:29.244Z</lastmod>
     
@@ -170,23 +170,9 @@
   </url>
   
   <url>
-    <loc>/sq1/csp/index.html</loc>
+    <loc>/333/ohcoll/index.html</loc>
     
     <lastmod>2018-12-27T04:29:29.244Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/333/coll/index.html</loc>
-    
-    <lastmod>2018-12-27T04:29:29.243Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/222/CLL/index.html</loc>
-    
-    <lastmod>2018-12-27T04:29:29.243Z</lastmod>
     
   </url>
   
@@ -205,7 +191,21 @@
   </url>
   
   <url>
+    <loc>/333/coll/index.html</loc>
+    
+    <lastmod>2018-12-27T04:29:29.243Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/bigcube/555edges/index.html</loc>
+    
+    <lastmod>2018-12-27T04:29:29.243Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/222/CLL/index.html</loc>
     
     <lastmod>2018-12-27T04:29:29.243Z</lastmod>
     
